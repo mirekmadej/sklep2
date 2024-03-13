@@ -6,10 +6,11 @@ function Produkt(props){
         <div className='produkt'>
             <p><img src={props.prod.grafika}
                 alt={props.prod.nazwa} /></p>
-            <p>{props.prod.nazwa} {props.prod.cena} zł/szt</p>
+            <p>{props.prod.nazwa} {props.prod.cena.toFixed(2)} zł/szt</p>
             <button className='przycisk' 
                 onClick={props.fp}> + </button>
-            <button className='przycisk'> - </button>
+            <button className='przycisk'
+                onClick={props.fm}> - </button>
             <p> </p>
         </div>
     );
