@@ -1,0 +1,10 @@
+.produkt{
+    border: 1px solid black;
+    float: left;
+    width: 220px;
+}
+.przycisk{
+    width: 110px;
+    height: 40px;
+    font-size: x-large;
+}
